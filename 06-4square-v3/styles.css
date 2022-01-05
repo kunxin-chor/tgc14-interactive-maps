@@ -1,0 +1,43 @@
+#singapore-map {
+    height: 100vh;
+}
+
+#map-container {
+    position: relative;
+}
+
+#search-container {
+    position: absolute;
+    top: 30px;
+    left : 50px;
+    z-index: 314159;
+    background-color: rgba(217, 210, 210, 0.82);
+    padding: 10px;
+    display: none;
+}
+
+#search-results {
+    overflow-y: auto;
+    max-height:300px;
+}
+
+.search-result {
+    margin: 5px;
+}
+
+#toggle-search-btn {
+    position: absolute;
+    z-index: 314159;
+    top: 10px;
+    right: 10px;
+}
+
+@media (min-width:767px) {
+    #search-container {
+        display: block;
+    }
+
+    #toggle-search-btn {
+        display: none;
+    }
+}
